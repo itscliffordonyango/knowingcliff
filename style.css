@@ -1,0 +1,520 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding-top: 100px;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #070101;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 100%;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 1em 0;
+    
+}
+
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+    font-family: Georgia, "Cambria", serif;
+    color: #444;
+    line-height: 1.8em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #0950b4;
+    }
+    .post-category-yui {
+        background: #8156a7;
+    }
+    .post-category-js {
+        background: #df2d4f;
+    }
+    .post-category-python {
+        background: #f0ec07;
+        color: #0950b4;
+        font-weight: 500;
+    }
+    .post-category-flask {
+        background: #18e206;
+    }
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #04c49a;
+    text-shadow: 0 1px 1px #02104eb2;
+}
+
+.footer {
+    padding: 1em 0;
+}
+.footer a {
+    color: #01040c;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: rgb(15, 3, 189);
+}
+
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+
+    /* these styles change contents in the sidebar */
+    .header {
+        margin: 10% 2em 0;
+        text-align:left ;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
+    
+    .pure-menu-link{
+        color: rgb(0, 3, 12);
+        background-color: #e6e5e5;
+    }
+    
+
+
+    .profimg {
+        border-radius: 50px;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        justify-items: center;
+    }
+
+    .profileimg{
+        justify-items: center;
+    }    
+
+    .profimgs {
+        border-radius: 100px;
+        float: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }
+
+    .profileimg2{
+        background-color: #dee4dd;
+    }
+
+    .pure-button{
+        border-radius: 50px;
+        color: rgb(26, 17, 1);
+        transition: width 1.5s;
+    }
+/* 
+    .pure-button  :hover{
+        
+        background-color: black;
+    }  */
+
+}
+
+header{
+    top: 0;
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .navbar .logo i {
+    color: #0aa5ff;
+    font-size: 22px;
+  }
+  
+  .navbar .logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 12px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .menu-links {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+  }
+  
+  .menu-links a {
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+  }
+  .menu-links a:hover {
+    color: rgb(17, 241, 230);
+  }
+}
+
+ 
+footer .share {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        transition: .4s ease-in-out;
+        margin-top: 60px;
+      }
+      
+      .btn1 {
+        position: relative;
+        width: 3em;
+        height: 3em;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        transition: .4s all;
+      }
+      
+      .btn1 .instagram {
+        margin-top: 0.1em;
+        fill: #cc39a4;
+      }
+      
+      .btn1 .tooltiptext1 {
+        visibility: hidden;
+        width: 6em;
+        height: 8em;
+        background-color: whitesmoke;
+        color: black;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em;
+        position: absolute;
+        left: -1.5em;
+        top: -8em;
+        z-index: 1;
+        transition: .1s ease-in-out;
+      }
+      
+      .btn1 .tooltiptext1 .card {
+        width: 4em;
+        height: 4em;
+        background-color: white;
+      }
+      
+      .btn1 .tooltiptext1 .account {
+        margin-top: 1em;
+      }
+      
+      .btn1 .tooltiptext1 .username {
+        font-size: 0.7em;
+        margin-top: 1.6em;
+        font-weight: bold;
+      }
+      
+      .btn1:hover .tooltiptext1 {
+        transform: translateY(-1em);
+        visibility: visible;
+      }
+      
+      .btn1:hover {
+        background-color: #cc39a4;
+      }
+      
+      .btn1:hover .instagram {
+        fill: white;
+      }
+      
+      .btn2 {
+        position: relative;
+        width: 3em;
+        height: 3em;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        transition: .4s all;
+      }
+      
+      .btn2 .twitter {
+        margin-top: .25em;
+        margin-left: .1em;
+        fill: #03A9F4;
+      }
+      
+      .btn2 .tooltiptext2 {
+        visibility: hidden;
+        width: 6em;
+        height: 8em;
+        background-color: whitesmoke;
+        color: black;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em;
+        position: absolute;
+        left: -1.5em;
+        top: -8em;
+        z-index: 1;
+        transition: .1s ease-in-out;
+      }
+      
+      .btn2 .tooltiptext2 .card {
+        width: 4em;
+        height: 4em;
+        background-color: white;
+      }
+      
+      .btn2 .tooltiptext2 .account {
+        margin-top: 1em;
+      }
+      
+      .btn2 .tooltiptext2 .username {
+        font-size: 0.6em;
+        margin-top: 1.6em;
+        font-weight: bold;
+      }
+      
+      .btn2:hover .tooltiptext2 {
+        transform: translateY(-1em);
+        visibility: visible;
+      }
+      
+      .btn2:hover {
+        background-color: #03A9F4;
+      }
+      
+      .btn2:hover .twitter {
+        fill: white;
+      }
+      
+      .btn3 {
+        position: relative;
+        width: 3em;
+        height: 3em;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        transition: .4s all;
+      }
+      
+      .btn3 .tooltiptext3 {
+        visibility: hidden;
+        width: 6em;
+        height: 8em;
+        background-color: whitesmoke;
+        color: black;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em;
+        position: absolute;
+        left: -1.5em;
+        top: -8em;
+        z-index: 1;
+        transition: .1s ease-in-out;
+      }
+      
+      .btn3 .tooltiptext3 .card {
+        width: 4em;
+        height: 4em;
+        background-color: white;
+      }
+      
+      .btn3 .tooltiptext3 .account {
+        margin-top: 1em;
+      }
+      
+      .btn3 .tooltiptext3 .username {
+        font-size: 0.7em;
+        margin-top: 1.6em;
+        font-weight: bold;
+      }
+      
+      .btn3:hover .tooltiptext3 {
+        transform: translateY(-1em);
+        visibility: visible;
+      }
+      
+      .btn3:hover {
+        background-color: black;
+      }
+      
+      .btn3:hover .git {
+        fill: white;
+      }
+
+       .btn4 {
+        position: relative;
+        width: 3em;
+        height: 3em;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        transition: .4s all;
+      }
+      .btn4 .tooltiptext4 {
+        visibility: hidden;
+        width: 6em;
+        height: 8em;
+        background-color: whitesmoke;
+        color: black;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em;
+        position: absolute;
+        left: -1.5em;
+        top: -8em;
+        z-index: 1;
+        transition: .1s ease-in-out;
+      }
+      .btn4 .tooltiptext4 .card {
+        width: 4em;
+        height: 4em;
+        background-color: white;
+      }
+      .btn4 .tooltiptext4 .account {
+        margin-top: 1em;
+      }
+      .btn4 .tooltiptext4 .username {
+        font-size: 0.7em;
+        margin-top: 1.6em;
+        font-weight: bold;
+      }
+      .btn4:hover .tooltiptext4 {
+        transform: translateY(-1em);
+        visibility: visible;
+      }
+      .btn4:hover {
+        background-color: #0aa5ff;
+      }
+      
